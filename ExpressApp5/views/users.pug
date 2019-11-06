@@ -1,0 +1,17 @@
+﻿include header
+
+block content
+
+  h1 All Users
+  table
+   thead
+        th User ID
+        th User Name
+        
+   tbody
+    each account in Allaccount
+     tr
+      td #{account._id} 
+      td #{account.username}
+
+include footer
